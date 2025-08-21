@@ -34,6 +34,8 @@ com_crashlytics_export_strings.xml
 ## Robovm:
 /ios/robovm-build/
 
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
 ## iOS:
 /ios/xcode/*.xcodeproj/*
 !/ios/xcode/*.xcodeproj/xcshareddata
@@ -42,6 +44,8 @@ com_crashlytics_export_strings.xml
 /ios/IOSLauncher.app
 /ios/IOSLauncher.app.dSYM
 
+# Avoid ignore Gradle wrappper properties
+!gradle-wrapper.properties
 ## GWT:
 /html/war/
 /html/gwt-unitCache/
@@ -53,8 +57,8 @@ gwt-unitCache/
 www-test/
 .gwt-tmp/
 
-## TeaVM:
-# Not sure yet...
+# Cache of project
+.gradletasknamecache
 
 ## IntelliJ, Android Studio:
 .idea/
